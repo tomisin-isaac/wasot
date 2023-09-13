@@ -1,0 +1,24 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+
+.root{
+--primary-color: #38B4EA;
+--secondary-color: #210124;
+--heading-color: #1B0760;
+--body-color: #918CA4;
+}
+
+
+html{
+    font-size: 62.5%;
+}
