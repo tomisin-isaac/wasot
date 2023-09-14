@@ -17,6 +17,7 @@ html{
 
 :root{
     --primary-color: #38B4EA;
+    --primary-hover-color: #2776EA;
     --secondary-color: #210124;
     --heading-color: #1B0760;
     --body-color: #918CA4;
@@ -144,17 +145,17 @@ body{
     text-decoration: none;
 }
 
-.secondary-btn{
+.asset-btn{
     padding: 1rem 2rem;
     border-radius: .5rem;
     margin-top: -3.6rem;
-    background: var(--primary-color);
+    background: transparent;
     outline: none;
     border: 2px solid white;
     transition: 1s;
 }
 
-.secondary-btn:hover{
+.asset-btn:hover{
     color: white;
     background-color: var(--secondary-color);
 
@@ -246,7 +247,7 @@ body{
     
     
     .menu-wrap .toggler:checked ~ .hamburger > div{
-        background-color: gold;
+        background-color: var(--secondary-color);
     }
     
     .menu-wrap .toggler:checked ~ .menu > div{
@@ -273,7 +274,7 @@ body{
     }
     
     .menu-wrap .menu > div{
-        background: rgba(24, 39, 51, 0.95);
+        background: var(--primary-color);
         border-radius: 30%;
         width: 200vw;
         height: 400vw;
@@ -305,5 +306,127 @@ body{
         text-decoration: none;
         transition: color 0.4s ease;
     }
+    .menu-desktop{
+        display: block;
+    }
+    .menu-desktop h3{
+        color: white;
+    }
 }
 /* HANDBURGER ENDS HERE  */
+
+
+
+
+/* BANNER STARTS HERE  */
+.banner{
+    margin: 17rem 0 0 3rem;
+}
+
+.banner-contaner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.primary-btn{
+    padding: .8rem 2.6rem;
+    background-color: var(--primary-color);
+    margin-top: 3rem;
+    margin-right: 1.9rem;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    border-radius: .5rem;
+    transition: 1s;
+}
+
+.primary-btn h3{
+    color: white;
+    transition: 1s;
+}
+
+.primary-btn:hover{
+    background-color: var(--primary-hover-color);
+}
+
+.secondary-btn{
+    padding: .8rem 2.6rem;
+    background-color: transparent;
+    margin-top: 3rem;
+    outline: none;
+    border: 1px solid black;
+    border-radius: .5rem;
+    transition: 1s;
+}
+
+.secondary-btn:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.secondary-btn:hover > h3{
+    color: white;
+}
+
+
+
+.desktop-img{
+    display: none;
+}
+
+
+.banner-img{
+  display: flex;
+  justify-content: end;
+  /* margin-top: -5rem; */
+}
+
+.banner-img img{
+    width: 25.7rem;
+    height: 40.3rem;
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .banner-contaner{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .banner-img{
+        margin-top: -2rem;
+    }
+
+    .banner-img img{
+        width: 20.7rem;
+        height: 30.3rem;
+    }
+}
+
+@media (min-width:1001px){
+    .banner-contaner{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .mobile-img{
+        display: none;
+    }
+    .desktop-img{
+        display: block;
+    }
+    .banner-img img{
+        width: 50.8rem;
+        height: 52.1rem;
+    }
+    .banner-img{
+        margin-top: 15rem;
+    }
+    .banner{
+        margin: 17rem 0 0 10rem;
+    }
+    .secondary-btn, .primary-btn{
+        padding: 1.7rem 6rem;
+    }
+}
+
+
+
