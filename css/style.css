@@ -379,12 +379,12 @@ body{
 .banner-img{
   display: flex;
   justify-content: end;
-  /* margin-top: -5rem; */
 }
 
 .banner-img img{
-    width: 25.7rem;
-    height: 40.3rem;
+    width: 18.7rem;
+    height: 26.3rem;
+    margin-top: -7rem;
 }
 
 @media (min-width: 700px) and (max-width: 1000px) {
@@ -399,6 +399,7 @@ body{
     .banner-img img{
         width: 20.7rem;
         height: 30.3rem;
+        margin-top: 0rem;
     }
 }
 
@@ -406,6 +407,7 @@ body{
     .banner-contaner{
         flex-direction: row;
         flex-wrap: nowrap;
+        gap: 20.4rem;
     }
     .mobile-img{
         display: none;
@@ -427,6 +429,50 @@ body{
         padding: 1.7rem 6rem;
     }
 }
+/* BANNER STARTS HERE  */
 
 
+
+
+
+/* HISTORY STARTS HERE  */
+.history{
+    padding: 3.4rem 4rem 0 0;
+}
+
+.history-contaner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.9rem;
+}
+
+.desktoph-img{
+    display: none;
+}
+
+.mobileh-img{
+    /* margin-top: 8.8rem; */
+    width: 6rem;
+}
+
+.history-text p{
+    line-height: 2;
+}
+
+@media (min-width:1000px) {
+    .mobileh-img{
+        display: none;
+    }
+    .mobile-img{
+        display: none;
+    }
+    .desktoph-img{
+        display: block;
+        width: 40.5rem;
+    }
+    .history-contaner{
+        gap: 20.5rem;
+    }
+}
 
