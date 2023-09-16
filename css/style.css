@@ -642,6 +642,10 @@ body{
 
 
 @media (min-width: 1020px) {
+    .desktoph-img{
+        display: block;
+    }
+    
     .support-container{
         flex-direction: row;
         flex-direction: row-reverse;
@@ -733,3 +737,129 @@ body{
     border: none;
 }
 
+
+
+/* ABOUT PAGE STARTS HERE  */
+/* ABOUT BANNER STARTS HERE  */
+.about-banner{
+    margin-top: 12rem;
+    overflow: hidden;
+}
+.about-banner-img img{
+    width: 100vw;
+}
+
+.about-text{
+    padding: 3rem;
+}
+
+.about-text p{
+    margin-bottom: 3rem;
+}
+
+@media (min-width:1024px) {
+    .about-text{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
+/* ABOUT BANNER ENDS HERE  */
+
+
+
+
+
+/* MISSION STARTS HERE  */
+.mission-statement{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    padding: 0 3rem 3rem 3rem;
+}
+
+
+
+.mission-img img{
+    width: 100%;
+}
+
+.mission-container-img{
+    display: none;
+}
+
+@media (min-width:1024px) {
+    .mission-containter{
+        display: flex;
+    }
+    .mission-statement{
+        flex-direction: row;
+        padding: 0 10rem 10rem 10rem;
+        gap: 10rem;
+    }
+
+    .mission-img img{
+        width: 43.7rem;
+        height: 33.9rem;
+    }
+
+    .mission-reverse{
+        flex-direction: row-reverse;
+    }
+}
+
+@media (min-width:1543px) {
+    .mission-container-img{
+        display: block;
+        display: flex;
+        align-items: center;
+    }
+    .mission-container-img img{
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* MISSION ENDS HERE  */
+
+
+
+/* BOARD MEMEBERS STARTS HERE  */
+.board-title{
+    text-align: center;
+    padding: 4.4rem 0 4.1rem 0;
+}
+
+.board-individual{
+    padding: 0 3rem 0 3rem;
+}
+
+
+.board-img img{
+    width: 100%;
+}
+
+.board-text{
+    text-align: center;
+}
+
+.board-text p{
+    padding: .1rem 0 .6rem 0;
+}
+
+@media (min-width:1024px) {
+    .board-holder{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;   
+        align-content: center;
+        justify-content: center;
+    }
+
+    .board-img img{
+        width: 37.4rem;
+        height: 35.7rem;
+    }
+
+    .board-text h1{
+        font-size: 3rem;
+    }
+}
