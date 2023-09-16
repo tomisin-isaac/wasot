@@ -863,3 +863,76 @@ body{
         font-size: 3rem;
     }
 }
+
+
+/* EVENTS PAGE STATS HERE  */
+/* HOSTEED STARTS HERE  */
+.hosted{
+    margin-top: 13rem;
+}
+
+.animation{
+    display: flex;
+    justify-content: center;
+}
+
+.hosted-text{
+    padding: 0 3rem 0 3rem;
+}
+
+
+@media (min-width:1024px) and (max-width:1489px) {
+    .hosted{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 10rem 0 10rem;
+        gap: 4rem;
+
+    }
+
+    .animation{
+        display: flex;
+        align-items: center;
+    }
+
+    .animation lottie-player{
+        width: 31.1rem;
+        height: 31.1rem;
+    }
+
+    .hosted-text{
+        padding-top: 14.7rem;
+    }
+}
+@media (min-width:1489px) {
+    .hosted{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 10rem 0 10rem;
+        gap: 4rem;
+
+    }
+
+    .animation{
+        display: flex;
+        align-items: center;
+    }
+
+    .animation lottie-player{
+        width: 51.1rem;
+        height: 51.1rem;
+    }
+
+    .hosted-text{
+        padding-top: 10.7rem;
+    }
+}
+
+
+/* EVENTS STARTS HERE  */
+.events-holder{
+    padding-top: 10rem;
+}
+.events-text h1{
+    font-size: 3rem;
+}
