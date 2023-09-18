@@ -58,6 +58,7 @@ h4{
 }
 
 body{
+    /* font-family: 'Courier New', Courier, monospace; */
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
@@ -580,7 +581,7 @@ body{
     margin-bottom: 1rem;
 }
 
-.form-group input{
+.form-group input, textarea{
     border: 2px solid var(--primary-color);
     width: 80vw;
     padding: 1.5rem 1.3rem;
@@ -935,4 +936,73 @@ body{
 }
 .events-text h1{
     font-size: 3rem;
+}
+/* EVENTS ENDS HERE  */
+
+
+
+
+
+/* CONTACTUS PAGE STARTS HERE  */
+.contact-container{
+    padding: 13rem 3rem 0 3rem;
+    background-color: var(--secondary-color);
+    height: 70vh;
+}
+
+.contact-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-text h1, a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-icon-holdder{
+    display: flex;
+    gap: 3rem;
+}
+
+.content-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-icon img{
+    width: 100%;
+}
+.contact-form-holder{
+    margin-top: 4rem;
+    background-color: white;
+    box-shadow: 0 0 5px lightgray;
+    padding: 3rem;
+    border-radius: .5rem;
+}
+
+.contact-form input, textarea{
+    width: 70vw;
+}
+
+@media (min-width:1024px) {
+    .contact-holder{
+        flex-wrap: nowrap;
+    }
+
+    .contact-form input, textarea{
+        width: 30vw;
+    }
+
+    .contact-container{
+        padding: 20rem 10rem 0 10rem;
+        height: 80vh;
+    }
+
+    .contact-icon-holdder img{
+        width: 3.5rem;
+    }
+    
 }
