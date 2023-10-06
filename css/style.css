@@ -31,6 +31,75 @@ body{
 
 
 
+/* LOGIN PAGE */
+.container_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 400px; /* Limit maximum width */
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Full width input on all screens */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login_btn {
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    margin-top: 1.6rem;
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    transition: 1s;
+}
+
+.login_btn:hover {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.error-message {
+    color: red;
+}
+
+@media (min-width: 768px) {
+    .login-container {
+        width: 70%; /* Adjust width for medium-sized screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .login-container {
+        width: 50%; /* Adjust width for larger screens */
+    }
+}
+
+
+
 
 /* Typography for mobile design starts here  */
 h1,h2,h3,h4{
@@ -329,7 +398,7 @@ body{
 
 /* BANNER STARTS HERE  */
 .banner{
-    margin: 17rem 0 0 3rem;
+    margin: 13rem 0 0 3rem;
     overflow: hidden;
 }
 
@@ -432,6 +501,7 @@ body{
     .banner-img img{
         width: 50.8rem;
         height: 52.1rem;
+        margin-top: -5rem;
     }
     .banner-img{
         margin-top: 15rem;
@@ -455,6 +525,7 @@ body{
 /* HISTORY STARTS HERE  */
 .history{
     padding: 3.4rem 4rem 0 0;
+    overflow: hidden;
 }
 
 .history-contaner{
@@ -490,6 +561,9 @@ body{
     }
     .history-contaner{
         gap: 20.5rem;
+    }
+    .history{
+        padding: 3.4rem 20rem 0 0;
     }
 }
 
@@ -615,21 +689,32 @@ body{
     margin-top: -2rem;
 }
 
+
+
 @media (min-width: 1024px) {
     .member{
-        padding: 4rem 0 0 0;
+        padding: 10rem 0 0 0;
     }
     .member-img img{
         display: block;
-        width: 25vw;
+        width: 61.9rem;
+        height: 78.2rem;
     }
     .memeber-container{
         display: flex;
-        gap: 7.7rem;
+        justify-content: space-around;
+        /* gap: 20rem; */
     }
     .form-group input{
         width: 40vw;
+    }
+}
 
+@media (min-width: 1024px) and (max-width:1356px) {
+    .member-img img{
+        display: block;
+        width: 41.9rem;
+        height: 58.2rem;
     }
 }
 /* MEMBER ENDS HERE  */
@@ -668,6 +753,10 @@ body{
         flex-direction: row-reverse;
         padding: 2.1rem 10rem;
         gap: 8rem;
+    }
+
+    .support-text{
+        width: 80pc;
     }
 }
 
@@ -1021,71 +1110,4 @@ body{
         width: 3.5rem;
     }
     
-}
-
-/* LOGIN PAGE */
-.container_login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.login-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 90%; /* Adjust width for smaller screens */
-    max-width: 400px; /* Limit maximum width */
-}
-
-.form-group {
-    margin: 10px 0;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="password"] {
-    width: 100%; /* Full width input on all screens */
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-.login_btn {
-    padding: 1rem 2rem;
-    border-radius: .5rem;
-    margin-top: 1.6rem;
-    background: transparent;
-    outline: none;
-    border: 1px solid var(--secondary-color);
-    transition: 1s;
-}
-
-.login_btn:hover {
-    color: white;
-    background-color: var(--secondary-color);
-}
-
-.error-message {
-    color: red;
-}
-
-@media (min-width: 768px) {
-    .login-container {
-        width: 70%; /* Adjust width for medium-sized screens */
-    }
-}
-
-@media (min-width: 1024px) {
-    .login-container {
-        width: 50%; /* Adjust width for larger screens */
-    }
 }
