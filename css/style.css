@@ -5,6 +5,7 @@
 }
 
 
+
 *{
     margin: 0;
     padding: 0;
@@ -45,8 +46,6 @@ body{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 90%; /* Adjust width for smaller screens */
-    max-width: 400px; /* Limit maximum width */
 }
 
 .form-group {
@@ -58,14 +57,7 @@ label {
     font-weight: bold;
 }
 
-input[type="text"],
-input[type="password"] {
-    width: 100%; /* Full width input on all screens */
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
+
 
 .login_btn {
     padding: 1rem 2rem;
@@ -86,17 +78,7 @@ input[type="password"] {
     color: red;
 }
 
-@media (min-width: 768px) {
-    .login-container {
-        width: 70%; /* Adjust width for medium-sized screens */
-    }
-}
 
-@media (min-width: 1024px) {
-    .login-container {
-        width: 50%; /* Adjust width for larger screens */
-    }
-}
 
 
 
