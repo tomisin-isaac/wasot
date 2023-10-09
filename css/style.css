@@ -1021,8 +1021,6 @@ body{
 .footer{
     margin-top: 4rem;
     padding-top: 5rem;
-    background-color: white;
-    color: white;
 }
 .footer-holder{
     width: 90%;
@@ -1039,65 +1037,19 @@ body{
     margin-bottom: 1.5rem;
 }
 
-.footer a{
-    text-decoration: none;
-    color: #33355A;
-}
-
-.footer-info a h4{
-    padding-bottom: .5rem;
-}
 
 .footer-info h3{
     padding: .5rem 0 1.6rem 0;
     color: var(--primary-hover-color);
 }
-.footer-team{
-    justify-content: left !important;
-    margin-bottom: 2rem;
-}
 
-.f-program, .f-links, .f-terms h3{
-    color: var(--primary-color);
-}
 
-.f-program h3{
-    padding-bottom: 2rem;
-}
 
-.f-program a h4{
-    padding-bottom: 2rem;
-}
 
-.f-links h3{
-    padding-bottom: 2rem;
-}
 
-.f-links a h4{
-    padding-bottom: 2rem;
-}
 
-.f-terms h3{
-    padding-bottom: 2rem;
-}
 
-.f-terms a h4{
-    padding-bottom: 2rem;
-}
 
-.footer-close{
-    padding-top: 2rem;
-    width: 90%;
-    margin: auto;
-}
-
-.footer hr{
-    background-color: white;
-    color: white;
-    height: .2rem;
-    outline: none;
-    border: none;
-}
 
 
 
@@ -1204,9 +1156,9 @@ body{
 }
 
 .board-text p{
-    padding: .1rem 0 .6rem 0;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
 }
-
 @media (min-width:1024px) {
     .board-holder{
         display: flex;
@@ -1223,6 +1175,12 @@ body{
 
     .board-text h1{
         font-size: 3rem;
+    }
+
+    .board-text p{
+        /* font-size: 10rem; */
+        margin-top: -2rem;
+        padding-bottom: 1rem;
     }
 }
 
@@ -1258,8 +1216,8 @@ body{
     }
 
     .animation lottie-player{
-        width: 31.1rem;
-        height: 31.1rem;
+        width: 11.1rem;
+        height: 11.1rem;
     }
 
     .hosted-text{
@@ -1295,9 +1253,7 @@ body{
 .events-holder{
     padding-top: 10rem;
 }
-.events-text h1{
-    font-size: 3rem;
-}
+
 /* EVENTS ENDS HERE  */
 
 
