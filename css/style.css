@@ -610,7 +610,7 @@ body{
 
 .benefit-card{
     background-color: var(--primary-color);
-    width: 16.8rem;
+    width: 15.8rem;
     height: 19.7rem;
     border-top-left-radius: 1rem;
     display: flex;
