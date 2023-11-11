@@ -43,8 +43,11 @@ body{
   ::-webkit-scrollbar-thumb {
     border-radius: 0;
     background: #b0b0b0;
-  }
+}
 
+button{
+    cursor: pointer;
+}
 
 
 /* LOGIN PAGE */
